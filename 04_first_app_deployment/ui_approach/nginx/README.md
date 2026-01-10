@@ -105,6 +105,10 @@ Identify your cluster context (e.g., `kind-argocd-cluster`).
 ```bash
 argocd cluster add kind-argocd-cluster --name argocd-cluster --insecure
 ```
+**Example**
+```bash
+argocd cluster add <your_cluster_name> --name <choose_a_name> --insecure
+```
 
 3. Verify using:
 
