@@ -103,11 +103,11 @@ Identify your cluster context (e.g., `kind-argocd-cluster`).
 2. Add the cluster to ArgoCD:
 
 ```bash
-argocd cluster add kind-argocd-cluster --name argocd-cluster --insecure
+argocd cluster add <your_cluster_name> --name <choose_a_name> --insecure
 ```
 **Example**
 ```bash
-argocd cluster add <your_cluster_name> --name <choose_a_name> --insecure
+argocd cluster add kind-argocd-cluster --name argocd-cluster --insecure
 ```
 
 3. Verify using:
