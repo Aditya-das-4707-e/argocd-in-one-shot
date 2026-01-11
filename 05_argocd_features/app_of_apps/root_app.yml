@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default              # Can also assign to a Project if needed
   source:
-    repoURL: https://github.com/<your-username>/argocd-demos.git   # Repo containing child apps
+    repoURL: https://github.com/Aditya-das-4707-e/argocd-demos.git   # Repo containing child apps
     targetRevision: main        # Git branch to track
     path: app_of_apps/apps   # Path where child app manifests are stored
   destination:
-    server: <argocd_cluster_server_url>  # Deploying inside the same cluster
+    server: https://kubernetes.default.svc  # Deploying inside the same cluster
     namespace: argocd             # Applications (CRDs) must live in argocd namespace
   syncPolicy:
     automated:
