@@ -172,7 +172,11 @@ kubectl apply -f online-shop-app.yaml
 
 ```bash
 kubectl port-forward svc/kube-prometheus-stack-grafana -n monitoring 3000:80 --address=0.0.0.0 &
-# Login: admin/prom-operator
+# Login username: admin
+```
+**To find the password**
+```bash
+kubectl --namespace monitoring get secrets kube-prometheus-stack-grafana -o jsonpath="{.data.admin-password}" | base64 -d ; echo
 ```
 
 * Grafana Login:
