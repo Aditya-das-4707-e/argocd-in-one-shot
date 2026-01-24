@@ -125,6 +125,10 @@ helm install argocd argo/argo-cd -n argocd
 kubectl get pods -n argocd
 kubectl get svc -n argocd
 ```
+### Change argocd server's service from ClusterIP to NodePort
+```bash
+kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "NodePort"}}'
+```
 
 ### 5. Access the ArgoCD UI
 
