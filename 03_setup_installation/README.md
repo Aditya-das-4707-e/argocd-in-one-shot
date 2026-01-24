@@ -148,6 +148,16 @@ Login with:
 * Username: `admin`
 * Password: (above output)
 
+### ArgoCD CLI 
+1. Install
+```bash
+sudo curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.4.7/argocd-linux-amd64
+```
+2. Provide executable permission to this CLI
+```bash
+sudo chmod +x /usr/local/bin/argocd
+```
+
 ---
 
 ## **Method 2: Install ArgoCD using Official Manifests (kubectl apply)**
